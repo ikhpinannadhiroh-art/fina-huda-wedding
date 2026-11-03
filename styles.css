@@ -103,3 +103,81 @@ footer {
     border-right: 0;
   }
 }
+
+/* ===== ORNAMEN JAWA DI BAGIAN DALAM UNDANGAN ===== */
+
+/* Hiasan gunungan kecil di setiap bagian */
+.section-pad {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-pad::before {
+  content: "◇";
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #b48a4e;
+  font-size: 25px;
+  opacity: .65;
+  pointer-events: none;
+}
+
+/* Ornamen wayang sederhana di sisi bagian */
+.section-pad::after {
+  content: "❧";
+  position: absolute;
+  right: 15px;
+  bottom: 12px;
+  color: #b48a4e;
+  font: 34px Georgia, serif;
+  opacity: .28;
+  pointer-events: none;
+}
+
+/* Motif batik tipis sebagai pembatas */
+.batik-divider {
+  height: 25px;
+  border-top: 1px solid #d8bd88;
+  border-bottom: 1px solid #d8bd88;
+  opacity: .75;
+}
+
+/* Animasi muncul perlahan */
+.fade-in {
+  animation: jawaReveal 1.2s ease both;
+}
+
+@keyframes jawaReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi lembut untuk ilustrasi wayang */
+.wayang-art {
+  animation: wayangFloat 4s ease-in-out infinite;
+}
+
+@keyframes wayangFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Mengurangi gerakan bagi tamu yang memilihnya */
+@media (prefers-reduced-motion: reduce) {
+  .wayang-art,
+  .fade-in {
+    animation: none;
+  }
+}
