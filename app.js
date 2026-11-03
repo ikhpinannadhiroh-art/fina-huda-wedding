@@ -130,7 +130,7 @@
       await scrollSlowlyTo(targetY);
       if (!autoScrollActive) return;
 
-      await wait(10000);
+      
       if (!autoScrollActive) return;
     }
 
@@ -144,7 +144,7 @@
     await scrollSlowlyTo(bottom);
     if (!autoScrollActive) return;
 
-    await wait(10000);
+    
     autoScrollActive = false;
   }
 
