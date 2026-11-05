@@ -341,3 +341,23 @@ footer {
     margin-bottom: 14px;
   }
 }
+/* ===== PAKSA BACKGROUND SAMPUL BARU ===== */
+
+html body #cover.cover.cover-new {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 100vh !important;
+  min-height: 100svh !important;
+  margin: 0 !important;
+  padding: 30px 20px !important;
+
+  background-color: #f4eee2 !important;
+  background-image: url("./cover-undangan.png") !important;
+  background-size: 100% 100% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  z-index: 100 !important;
+}
