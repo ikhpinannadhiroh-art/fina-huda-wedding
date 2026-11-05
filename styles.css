@@ -241,7 +241,7 @@ footer {
   padding: 25px 24px;
   text-align: center;
   color: #56391f;
-  transform: translateY(-35px);
+  transform: translateY(-55px);
 }
 
 /* LOGO MONOGRAM FH */
@@ -317,7 +317,7 @@ footer {
 @media (max-width: 480px) {
   .cover-content {
     padding: 20px;
-    transform: translateY(-25px);
+    transform: translateY(-45px);
   }
 
   .monogram {
