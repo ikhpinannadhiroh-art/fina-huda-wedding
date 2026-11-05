@@ -360,3 +360,13 @@ html body #cover.cover.cover-new {
   height: 100%;
   object-fit: contain;
 }
+
+@media (max-width: 480px) {
+  #cover .cover-content {
+    transform: translateY(-75px);
+  }
+
+  #cover .monogram-logo {
+    margin-bottom: 10px;
+  }
+}
