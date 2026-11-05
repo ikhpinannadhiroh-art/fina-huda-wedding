@@ -181,3 +181,25 @@ footer {
     animation: none;
   }
 }
+
+/* ===== PERBAIKAN GAMBAR SAMPUL ===== */
+#cover .wayang-art.cover-image {
+  position: relative !important;
+  inset: auto !important;
+  display: block;
+  width: min(88%, 460px);
+  height: auto !important;
+  margin: 18px auto 16px;
+  transform: none !important;
+  animation: none !important;
+  z-index: 1;
+}
+
+#cover .wayang-art.cover-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 42vh;
+  object-fit: contain;
+  margin: 0 auto;
+}
