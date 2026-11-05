@@ -238,16 +238,17 @@ footer {
   z-index: 2;
   width: 100%;
   max-width: 520px;
-  padding: 35px 24px;
+  padding: 25px 24px;
   text-align: center;
   color: #56391f;
+  transform: translateY(-35px);
 }
 
 .monogram {
   position: relative;
-  width: 112px;
-  height: 105px;
-  margin: 0 auto 22px;
+  width: 130px;
+  height: 110px;
+  margin: 0 auto 30px;
   color: #a77b3e;
   font-family: "Cormorant Garamond", serif;
 }
@@ -255,20 +256,23 @@ footer {
 .monogram-h,
 .monogram-f {
   position: absolute;
-  top: 0;
   font-size: 100px;
   line-height: 1;
   font-weight: 500;
 }
 
 .monogram-h {
-  left: 36px;
+  left: 52px;
+  top: 0;
+  z-index: 1;
+  color: #b48a4e;
 }
 
 .monogram-f {
-  left: 10px;
-  top: 5px;
+  left: 5px;
+  top: 12px;
   z-index: 2;
+  color: #805a36;
 }
 
 .monogram-amp {
@@ -283,7 +287,8 @@ footer {
 }
 
 .cover-the-wedding {
-  margin: 0 0 9px;
+  margin: 0 0 15px;
+  line-height: 1.6;
   font-family: "Manrope", sans-serif;
   font-size: 11px;
   letter-spacing: 4px;
@@ -295,6 +300,7 @@ footer {
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(38px, 9vw, 55px);
   font-weight: 600;
+  line-height: 1.2;
   letter-spacing: 3px;
   color: #56391f;
 }
@@ -309,7 +315,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin: 17px auto 25px;
+  margin: 22px auto 30px;
   color: #b48a4e;
 }
 
@@ -320,9 +326,10 @@ footer {
 }
 
 #cover.cover-new .guest-preview {
-  margin: 0 auto 24px;
+  margin: 0 auto 30px;
   font-family: "Cormorant Garamond", serif;
   font-size: 19px;
+  line-height: 1.7;
   color: #56391f;
 }
 
@@ -333,12 +340,12 @@ footer {
 
 @media (max-width: 480px) {
   .cover-content {
-    padding: 25px 20px;
+    padding: 20px;
+    transform: translateY(-25px);
   }
 
   .monogram {
-    transform: scale(.9);
-    margin-bottom: 14px;
+    margin-bottom: 25px;
   }
 }
 /* ===== PAKSA BACKGROUND SAMPUL BARU ===== */
