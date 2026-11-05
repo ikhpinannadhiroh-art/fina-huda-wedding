@@ -203,3 +203,138 @@ footer {
   object-fit: contain;
   margin: 0 auto;
 }
+/* ===== SAMPUL BARU FINA & HUDA ===== */
+
+#cover.cover-new {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #f4eee2;
+  background-image: url("cover-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+#cover.cover-new .cover-frame {
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(180, 138, 78, 0.75);
+  pointer-events: none;
+}
+
+.cover-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 520px;
+  padding: 35px 24px;
+  text-align: center;
+  color: #56391f;
+}
+
+.monogram {
+  position: relative;
+  width: 112px;
+  height: 105px;
+  margin: 0 auto 22px;
+  color: #a77b3e;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.monogram-h,
+.monogram-f {
+  position: absolute;
+  top: 0;
+  font-size: 100px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.monogram-h {
+  left: 36px;
+}
+
+.monogram-f {
+  left: 10px;
+  top: 5px;
+  z-index: 2;
+}
+
+.monogram-amp {
+  position: absolute;
+  bottom: 0;
+  right: 7px;
+  font-size: 20px;
+  font-style: italic;
+  background: #f4eee2;
+  border-radius: 50%;
+  padding: 1px 5px;
+}
+
+.cover-the-wedding {
+  margin: 0 0 9px;
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #805a36;
+}
+
+.cover-names {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(38px, 9vw, 55px);
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #56391f;
+}
+
+.cover-names span {
+  color: #b48a4e;
+  font-style: italic;
+}
+
+.cover-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 17px auto 25px;
+  color: #b48a4e;
+}
+
+.cover-divider span {
+  width: 45px;
+  height: 1px;
+  background: #b48a4e;
+}
+
+#cover.cover-new .guest-preview {
+  margin: 0 auto 24px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
+  color: #56391f;
+}
+
+#cover.cover-new .gold-button {
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 480px) {
+  .cover-content {
+    padding: 25px 20px;
+  }
+
+  .monogram {
+    transform: scale(.9);
+    margin-bottom: 14px;
+  }
+}
